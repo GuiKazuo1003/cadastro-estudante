@@ -1,0 +1,48 @@
+<h1 class="text text-center">Cadastro de Estudante</h1>
+<form [formGroup]="formGroupEstudante">
+    <div class="mb-3">
+      <label for="Id" class="form-label">Id: </label>
+      <input type="text" class="form-control"  formControlName="id" placeholder="id">
+    </div>
+    <div class="mb-3">
+      <label for="nome" class="form-label" >Nome: </label>
+      <input type="text" class="form-control" placeholder="Seu nome:" formControlName="nome" >
+    </div>
+    <div class="mb-3">
+      <label for="idade" class="form-label">Idade: </label>
+      <input type="text" class="form-control" id="idade" placeholder="sua idade: " formControlName="idade" >
+    </div>
+    <div class="mb-3">
+        <label for="curso" class="form-label" formControlName="curso" >Curso </label>
+        <input type="text" class="form-control" id="curso" placeholder="ex: medicina" formControlName="curso" >
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label" formControlName="email" >Email: </label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email" >
+    </div>
+    <div class="mb-3 d-flex justify-content-end" >
+      <button type="button"class="btn btn-primary" (click)="save()">Cadastrar</button>
+    </div>
+            <table class="table container">
+                <thead>
+                  <tr class="top">
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let Cadastro of estudantes">
+                    <th scope="row">{{Cadastro.id}}</th>
+                    <td>{{Cadastro.nome}}</td>
+                    <td>{{Cadastro.idade}}</td>
+                    <td>{{Cadastro.curso}}</td>
+                    <td>{{Cadastro.email}}</td>
+                    <td class="d-flex justify-content-end">
+                    </td>
+                  </tr>
+                </tbody>           
+              </table>
+            </form>

@@ -1,0 +1,39 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "nome": "Antonio",
+      "idade": 19,
+      "curso": "mecatrônica",
+      "email": "Antonio@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Carla",
+      "idade": 21,
+      "curso": "ADS",
+      "email": "Carla@gmail.com"
+    },
+    {
+      "id": 3,
+      "nome": "Rosenilton",
+      "idade": 30,
+      "curso": "mecatrônica",
+      "email": "Rosenilton@gmail.com"
+    },
+    {
+      "id": "4",
+      "nome": "Anao",
+      "idade": "18",
+      "curso": "medicina",
+      "email": "anaodecalça@gmail.com"
+    },
+    {
+      "id": "6",
+      "nome": "sthe",
+      "idade": "19",
+      "curso": "ADS",
+      "email": "sthemonstradms@gmail.com"
+    }
+  ]
+}
